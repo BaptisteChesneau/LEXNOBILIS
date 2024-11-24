@@ -263,3 +263,93 @@ button:hover {
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
+.paiement-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarifaire, .paiement-options {
+    flex: 1 1 calc(50% - 10px);
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarifaire ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarifaire li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.paiement-options form .form-group {
+    margin-bottom: 15px;
+}
+
+.paiement-options form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.paiement-options form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.paiement-options button {
+    width: 48%;
+    margin: 5px 1%;
+    padding: 10px;
+    background-color: #b17309;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.paiement-options button:hover {
+    background-color: #a26508;
+}
+
+.paiement-container a button {
+    margin-top: 20px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.paiement-container a button:hover {
+    background-color: #003f7f;
+}
+
+@media (max-width: 768px) {
+    .paiement-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarifaire, .paiement-options {
+        width: 100%;
+    }
+}

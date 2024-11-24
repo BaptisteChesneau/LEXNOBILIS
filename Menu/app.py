@@ -56,7 +56,7 @@ def espace_client():
 def suivi_dossier():
     return render_template('suivi_dossier.html', documents=documents)
 
-@app.route('/envoie_documents', methods=['GET', 'POST'])
+@app.route('/envoi_documents', methods=['GET', 'POST'])
 def envoi_documents():
     if request.method == 'POST':
         if 'document' not in request.files:
@@ -69,7 +69,7 @@ def envoi_documents():
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             documents.append({'filename': filename, 'path': os.path.join(app.config['UPLOAD_FOLDER'], filename)})
             return redirect(url_for('suivi_dossier'))
-    return render_template('envoie_documents.html')
+    return render_template('envoi_documents.html')
 
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
@@ -77,7 +77,7 @@ def uploaded_file(filename):
 
 @app.route('/nous')
 def nous():
-    return "Nous Page"
+     return render_template('nous.html')
 
 @app.route('/nos_avocats')
 def nos_avocats():
@@ -100,7 +100,7 @@ def formulaire():
 
 @app.route('/paiement')
 def paiement():
-    return "Paiement Page"
+    return render_template('paiement.html')
 
 @app.route('/chatbot')
 def chatbot():

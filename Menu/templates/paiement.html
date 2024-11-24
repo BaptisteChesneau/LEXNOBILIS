@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - LexNobilis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="paiement-container">
+        <div class="tarifaire">
+            <h2>Grille Tarifaire</h2>
+            <ul>
+                <li>Consultation : 100€</li>
+                <li>Représentation en justice : 500€</li>
+                <li>Contrat de mariage : 200€</li>
+                <li>Conseils juridiques : 150€</li>
+            </ul>
+        </div>
+        <div class="paiement-options">
+            <h2>Moyens de Paiement</h2>
+            <form method="post" action="/process_payment">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Numéro de Carte</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiration">Date d'Expiration</label>
+                    <input type="text" id="expiration" name="expiration" placeholder="MM/AA" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Montant</label>
+                    <input type="text" id="amount" name="amount" required>
+                </div>
+                <button type="submit">Payer avec Stripe</button>
+                <button type="submit">Payer avec PayPal</button>
+            </form>
+        </div>
+        <a href="{{ url_for('home') }}"><button>Retour au Menu Principal</button></a>
+    </div>
+</body>
+</html>
