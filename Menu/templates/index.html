@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexNobilis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+            <h1>LexNobilis</h1>
+        </div>
+        <div class="header-right">
+            <a href="{{ url_for('signup') }}"><button>Créer un Compte</button></a>
+            <a href="{{ url_for('login') }}"><button>Se Connecter</button></a>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <a href="{{ url_for('nous') }}"><button>Nous</button></a>
+        <a href="{{ url_for('nos_avocats') }}"><button>Nos Avocats</button></a>
+        <a href="{{ url_for('blog') }}"><button>Blog</button></a>
+        <a href="{{ url_for('formulaire') }}"><button>Formulaire</button></a>
+        <a href="{{ url_for('paiement') }}"><button>Paiement</button></a>
+    </nav>
+    <div class="content">
+        <div class="left-content">
+            <img src="{{ url_for('static', filename='cabinet_image.jpg') }}" alt="Image du Cabinet">
+        </div>
+        <div class="right-content">
+            <a href="{{ url_for('chatbot') }}"><button class="chatbot-button">Chatbot</button></a>
+        </div>
+    </div>
+</body>
+</html>

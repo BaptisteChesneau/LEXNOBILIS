@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un Compte - LexNobilis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Créer un Compte</h2>
+        <form method="post">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de Passe</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">S'inscrire</button>
+        </form>
+        <div class="social-login">
+            <button class="google">S'inscrire avec Google</button>
+            <button class="facebook">S'inscrire avec Facebook</button>
+            <button class="apple">S'inscrire avec Apple</button>
+        </div>
+    </div>
+</body>
+</html>

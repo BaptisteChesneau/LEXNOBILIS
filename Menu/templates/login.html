@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se Connecter - LexNobilis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Se Connecter</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de Passe</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Se Connecter</button>
+        </form>
+        <div class="social-login">
+            <button class="google">Se Connecter avec Google</button>
+            <button class="facebook">Se Connecter avec Facebook</button>
+            <button class="apple">Se Connecter avec Apple</button>
+        </div>
+    </div>
+</body>
+</html>

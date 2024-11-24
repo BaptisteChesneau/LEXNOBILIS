@@ -1,0 +1,183 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    height: 100px; /* Taille augmentée */
+    margin-right: 10px;
+}
+
+.header-right {
+    position: relative; /* Permet de positionner les boutons relatifs au conteneur */
+    display: flex;
+    flex-direction: column; /* Dispose les boutons verticalement */
+    align-items: flex-end; /* Aligne les boutons à droite */
+    gap: 10px; /* Gère l'espacement entre les boutons */
+}
+
+.header-right a button {
+    padding: 10px 20px;
+    background-color: #b17309;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header-right a button:hover {
+    background-color: #003f7f;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #b17309;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main-nav button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.right-content {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chatbot-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chatbot-button:hover {
+    background-color: #218838;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b17309;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a26508;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-login button {
+    width: 32%;
+    background-color: #333;
+}
+
+.social-login .google {
+    background-color: #db4437;
+}
+
+.social-login .facebook {
+    background-color: #4267B2;
+}
+
+.social-login .apple {
+    background-color: #000000;
+}
+
+.confirmation-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-container h2 {
+    margin-bottom: 20px;
+}
+
+.confirmation-container p {
+    margin-bottom: 20px;
+}
