@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -136,4 +135,131 @@ button {
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #a26508;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-login button {
+    width: 32%;
+    background-color: #333;
+}
+
+.social-login .google {
+    background-color: #db4437;
+}
+
+.social-login .facebook {
+    background-color: #4267B2;
+}
+
+.social-login .apple {
+    background-color: #000000;
+}
+
+.confirmation-container, .client-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-container h2, .client-container h2 {
+    margin-bottom: 20px;
+}
+
+.confirmation-container p, .client-container p {
+    margin-bottom: 20px;
+}
+
+.dossier-container, .documents-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dossier-container h2, .documents-container h2 {
+    margin-bottom: 20px;
+}
+
+.document {
+    margin-bottom: 20px;
+}
+
+.document p {
+    margin: 0;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.article h3 {
+    margin-top: 0;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.article-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.article-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
