@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Client - LexNobilis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="client-container">
+        <h2>Bienvenue dans votre Espace Client</h2>
+        <p>Ceci est votre espace client. Vous pouvez gérer vos informations et accéder aux services offerts.</p>
+        <a href="{{ url_for('suivi_dossier') }}"><button>Suivi de Dossier</button></a>
+        <a href="{{ url_for('home') }}"><button>Retour au Menu Principal</button></a>
+    </div>
+</body>
+</html>

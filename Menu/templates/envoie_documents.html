@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envoi de Documents - LexNobilis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="documents-container">
+        <h2>Envoi de Documents</h2>
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="document">Chargement des docs (Text, Audio, Video, Image)</label>
+                <input type="file" id="document" name="document" accept="text/*,audio/*,video/*,image/*" required>
+            </div>
+            <button type="submit">Charger le Document</button>
+        </form>
+        <a href="{{ url_for('suivi_dossier') }}"><button>Voir les Documents Déposés</button></a>
+        <a href="{{ url_for('home') }}"><button>Retour au Menu Principal</button></a>
+    </div>
+</body>
+</html>

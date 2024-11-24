@@ -98,16 +98,17 @@ header {
     background-color: #218838;
 }
 
-.form-container {
+.form-container, .dossier-container, .documents-container, .confirmation-container, .client-container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.form-container h2 {
+.form-container h2, .dossier-container h2, .documents-container h2, .confirmation-container h2, .client-container h2 {
     margin-bottom: 20px;
 }
 
@@ -135,49 +136,4 @@ button {
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #a26508;
-}
-
-.social-login {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.social-login button {
-    width: 32%;
-    background-color: #333;
-}
-
-.social-login .google {
-    background-color: #db4437;
-}
-
-.social-login .facebook {
-    background-color: #4267B2;
-}
-
-.social-login .apple {
-    background-color: #000000;
-}
-
-.confirmation-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.confirmation-container h2 {
-    margin-bottom: 20px;
-}
-
-.confirmation-container p {
-    margin-bottom: 20px;
 }
